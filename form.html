@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Form</h2>
+        <hr>
+        <div id="form-wrapper">
+            <fieldset>
+                <legend>Enter Data</legend>
+                <form action="formhandler.php" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">
+                                Name:
+                                <br>
+                                <br>
+                                <input type="text" name="user_name" placeholder="John Doe">
+                            </label>
+                        </li>
+                        <li>
+                            <label for="email">
+                                Email:
+                                <br>
+                                <br>
+                                <input type="email" name="user_email" placeholder="jdoe@example.com">
+                            </label>
+                        </li>
+                        <li>
+                            <label for="message"></label>
+                            Message:
+                            <br>
+                            <br>
+                            <textarea name="user_message" placeholder="Hello, from John Doe..."></textarea>
+                        </li>
+                        <li>
+                            <br>
+                            <br>
+                            <button type="submit">Send Message</button>
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
